@@ -16,7 +16,7 @@ export async function POST(request: NextRequest) {
   };
 
   try {
-    let foundUser: User | null | undefined;
+    let foundUser
     try {
       foundUser = await prisma.user.findFirst({
         where: { username },

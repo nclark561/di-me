@@ -20,7 +20,7 @@ export default function LoginForm() {
       .then(res => {
         //@ts-ignore
         authCtx.login(res.data.token, res.data.exp, res.data.id)
-        router.push(`/user/${res.data.id}`)
+        router.push('/user')
       })
       .catch(err => {
         console.error(err)
