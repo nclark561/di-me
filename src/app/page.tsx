@@ -11,9 +11,9 @@ export default function Home() {
   }
 
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <h1>Welcome to Di-me, an online chatting app!</h1>
-      <button onClick={handleClick}>Click Here to start chatting!</button>
+    <main className="flex min-h-screen flex-col items-center p-24">
+      <h1 className='text-[30pt] m-[5vh]'>Welcome to Di Me, an online chatting app!</h1>
+      <button onClick={handleClick} className='anime'>Click Here to start chatting!</button>
     </main>
   )
 }

@@ -25,3 +25,24 @@ body {
     )
     rgb(var(--background-start-rgb));
 }
+
+.anime {
+  display: inline-block;
+  position: relative;
+}
+.anime::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  bottom: 0;
+  right: 0;
+  background-color: rgb(255, 255, 255);
+  transform: scaleX(0);
+  transform-origin: bottom center;
+  transition: transform 0.25s ease-out;
+}
+.anime:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom center;
+}
