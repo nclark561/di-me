@@ -8,7 +8,7 @@ export default function UserPage() {
 
   const handleClick = () => {
     authCtx.logout();
-    router.push("/login");
+    router.push("/");
   };
 
   return (
