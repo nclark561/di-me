@@ -14,7 +14,7 @@ export default function UserPage() {
   return (
     <main>
       <h1>UserPage</h1>
-      <button onClick={handleClick}>Logout</button>
+      <button onClick={handleClick} className="btn">Logout</button>
     </main>
   );
 }

@@ -46,3 +46,9 @@ body {
   transform: scaleX(1);
   transform-origin: bottom center;
 }
+
+.btn:hover {
+  width: 9vw;
+  height: 5vh;
+  font-size: 16pt;
+}
