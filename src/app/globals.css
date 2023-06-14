@@ -52,3 +52,25 @@ body {
   height: 5vh;
   font-size: 16pt;
 }
+
+.user-box {
+  position: relative;
+}
+
+.user-box label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 10px 0;
+  font-size: 16px;
+  pointer-events: none;
+  transition: .5s;
+}
+
+.user-box input:focus ~ label,
+.user-box input:valid ~ label {
+    top: -12px;
+    left: 0;
+    color: #7c9697;
+    font-size: 12px;
+}
