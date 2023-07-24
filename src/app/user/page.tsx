@@ -1,20 +1,10 @@
-"use client";
-import { useAuthContext } from "../context/AuthStore";
-import { useRouter } from "next/navigation";
+import Header from "./Header";
 
 export default function UserPage() {
-  const authCtx = useAuthContext();
-  const router = useRouter();
-
-  const handleClick = () => {
-    authCtx.logout();
-    router.push("/");
-  };
-
   return (
-    <main>
+    <main className="flex flex-col">
+      <Header/>
       <h1>UserPage</h1>
-      <button onClick={handleClick} className="btn">Logout</button>
     </main>
   );
 }
