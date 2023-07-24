@@ -12,9 +12,9 @@ export default function Header() {
   };
 
   return (
-    <header className="flex justify-between items-center">
-      <h1>Di Me</h1>
-      <button onClick={handleClick} className="anime">
+    <header className="flex justify-between items-center border-b border-white">
+      <h1 className="text-[30pt] m-[2vh]">Di Me</h1>
+      <button onClick={handleClick} className="anime mr-[2vw]">
         Logout
       </button>
     </header>
