@@ -35,7 +35,7 @@ export default function Conversations() {
         return (
           <div className="px-[2vw] border-b border-white cursor-pointer hover:bg-gray-800">
             <h1 className="mt-[1vh]">{conv.user2Name}</h1>
-            <p className="mb-[1vh] text-gray-500">{conv.recentMessage}</p>
+            <p className="mb-[1vh] text-gray-500 max-w-[12vw] overflow">{conv.recentMessage}</p>
           </div>
         );
       })}
