@@ -33,9 +33,9 @@ export default function Conversations() {
     <section className="flex flex-col border-r border-white h-[100%]">
       {conversations.map((conv) => {
         return (
-          <div>
-            <h1>{conv.user2Name}</h1>
-            <p>{conv.recentMessage}</p>
+          <div className="px-[2vw] border-b border-white cursor-pointer hover:bg-gray-800">
+            <h1 className="mt-[1vh]">{conv.user2Name}</h1>
+            <p className="mb-[1vh] text-gray-500">{conv.recentMessage}</p>
           </div>
         );
       })}
