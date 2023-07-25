@@ -96,3 +96,10 @@ declare module "jsonwebtoken" {
   ): null | { [key: string]: any } | string | JwtHeader | JwtPayload;
 }
 
+type Conversation = {
+  user1Id: number,
+  user2Id: number,
+  recentMessage: string,
+  user1Name: string,
+  user2Name: string
+}
