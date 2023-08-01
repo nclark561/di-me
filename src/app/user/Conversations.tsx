@@ -1,8 +1,17 @@
 "use client";
-import { useState, useEffect } from "react";
+import { useState, useEffect, Dispatch, SetStateAction } from "react";
 
-export default function Conversations() {
+interface ConversationsProps {
+  currConv: Partial<Conversation>;
+  setCurrConv: Dispatch<SetStateAction<Partial<Conversation>>>;
+}
+
+export default function Conversations(props: ConversationsProps) {
   const [conversations, setConversations] = useState<Conversation[]>([]);
+
+  const handleClick = (conv: Conversation) => {
+    props.setCurrConv(conv)
+  }
 
   useEffect(() => {
     setConversations([
@@ -33,7 +42,7 @@ export default function Conversations() {
     <section className="flex flex-col border-r border-white h-[100%]">
       {conversations.map((conv) => {
         return (
-          <div className="px-[2vw] border-b border-white cursor-pointer hover:bg-gray-800">
+          <div key={conv.user2Id} className="px-[2vw] border-b border-white cursor-pointer hover:bg-gray-800" onClick={() => handleClick(conv)}>
             <h1 className="mt-[1vh]">{conv.user2Name}</h1>
             <p className="mb-[1vh] text-gray-500 max-w-[12vw] overflow">{conv.recentMessage}</p>
           </div>
