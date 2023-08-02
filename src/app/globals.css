@@ -106,8 +106,18 @@ body {
   margin-top: -20px;
 }
 
-.sent {
+.recieved {
   background: #4f4a4a;
+  right: 36%;
+}
+
+.recieved:after {
+  border-color: transparent #4f4a4a;
+}
+
+.sent {
+  background: #0062ff;
+  right: 36%;
 }
 
 .sent:after {

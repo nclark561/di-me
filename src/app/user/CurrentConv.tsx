@@ -10,7 +10,7 @@ export default function CurrentConv(props: CurrentConvProps) {
   return props.currConv.user2Name ? (
     <div className="w-[100%] flex flex-col items-center">
       <h1 className="text-[24pt] m-[2vh]">{props.currConv.user2Name}</h1>
-      <p className="bubble sent">{props.currConv.recentMessage}</p>
+      <p className="bubble recieved">{props.currConv.recentMessage}</p>
     </div>
   ) : (
     <div className="w-[100%] flex items-center justify-center text-center">
