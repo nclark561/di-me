@@ -123,3 +123,7 @@ body {
 .sent:after {
   border-color: transparent #4f4a4a;
 }
+
+.class {
+  display: flex;
+}
