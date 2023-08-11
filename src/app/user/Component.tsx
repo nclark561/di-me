@@ -3,6 +3,6 @@ import React from 'react'
 
 export default function Component() {
   return (
-    <div className='flex flex-col justify-center'>Component</div>
+    <div className='flex flex-col justify-center items-center'>Component</div>
   )
 }
