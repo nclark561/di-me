@@ -13,7 +13,7 @@ export default function CurrentConv(props: CurrentConvProps) {
       <p className="bubble recieved">{props.currConv.recentMessage}</p>
     </div>
   ) : (
-    <div className="w-[100%] flex items-center justify-center text-center">
+    <div className="w-[100%] flex items-center justify-center text-center class-added">
       <h1 className="text-[22pt] text-gray-500">No conversation selected</h1>
     </div>
   );
