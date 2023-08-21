@@ -6,6 +6,8 @@ export default function Header() {
   const authCtx = useAuthContext();
   const router = useRouter();
 
+  const eight = 8
+
   const handleClick = () => {
     authCtx.logout();
     router.push("/");
